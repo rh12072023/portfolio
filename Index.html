@@ -1,0 +1,562 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta  charset="utf-8" />
+<link rel="shortcut icon" href="images/title.png">
+    <title>Welcome | Ryana Calendars</title>
+    <link href="stylesheet/jquery.easy_slides.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="stylesheet/jquery.easy_slides.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<!--optional theme-->
+    <link rel="stylesheet" href="stylesheet/main.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.theme.min.css">
+		<link rel='stylesheet' type='text/css' href='stylesheet/jquery.kwicks.css' />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<style>
+    body{}
+
+        /*FOr Map */
+        .map-responsive{
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+        }
+        .map-responsive iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+        }
+    .navbar-right {margin-left:140px;}
+    #wow{color:blue;}
+    .kwicks {
+    	height: 500px;
+    	width:100%;
+      margin-top: 10px;
+    }
+    .kwicks > li {
+    	height: 480px;
+
+    }
+    .bar {margin-left:500px;}
+    .main {background-color:#f1f1f1;padding:100px 100px;width:100%;height:700px;}
+    .active {border-bottom:3px solid #F93;}
+    .image1 {height:700px;}
+    .image2 {height:700px;}
+    .image3 {height:700px;}
+    .image4 {height:700px;}
+    .image5 {height:700px;}
+    .image6 {height:700px;}
+    .logo {margin-top:100px;}
+    .navbar {opacity:0.84;}
+	.faw {font-size:36px;}
+  .colored {color:#F93;}
+  h5 {font-size: 40px;}
+  .footer {background-color:#f1f1f1;}
+  .footerhr {border-color:#575652;width:70%;}
+
+
+
+  /* Footer */
+.footer {
+    position: relative;
+    background-color: #f1f1f1;
+    color: #7d7975;
+    padding: 95px 0 50px;
+    font-size:16px;
+}
+.footer p {
+    line-height:26px;
+    color : #fff;
+}
+.footer h5 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000  ;
+    position: relative;
+    padding-bottom: 16px;
+}
+.footer h5:after {
+    content: '';
+    display: block;
+    margin: 5px 0 0;
+    width: 40%;
+    height: 1px;
+    background-color: #fff ;
+}
+
+.footer ul {
+    list-style: none;
+    line-height:35px;
+    margin: 0px;
+    color:#fff;
+
+}
+.footer a {
+	font-weight:bold;
+
+}
+.footer a:hover {
+    color: #FFF ;
+}
+
+
+/*footer bottom */
+.footer-bottom {
+    padding-top: 10px;
+    padding-bottom: 1em;
+    border-top: 1px solid #2f2f33 ;
+    background: black  ;
+
+}
+.copyright-text p {
+    color: #7d7975;
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size:15px;
+}
+
+.copyright-text a {
+    color: #FFF;
+    margin: 0px 10px 0px 10px;
+
+}
+.copyright-text a:hover {
+    color: #aece61  ;
+
+
+}
+#icon
+{	height:100px;
+	width:100px;
+	transition:2s;
+}
+#icon :hover
+
+{
+	background:linear-gradient(to top, #fff, #FFF);
+	border-radius:100px;
+	height:85px;
+	width:85px;
+
+}
+    </style>
+</head>
+<!-- body ma active k liye-->
+<body data-spy="scroll" data-target="#my-navbar">
+  <header>
+    <img class="container img-responsive" src="Images/logo.png">
+  </header>
+  <center>
+  <div class="container-fluid main">
+  <div class="slider">
+  	<ul class='kwicks kwicks-horizontal'>
+  			<li id='panel-1'><img class="image1" src="Images/slider1.png"></li>
+  			<li id='panel-2'><img class="image2" src="Images/slider2.png"></li>
+  			<li id='panel-3'><img class="image3" src="Images/slider3.jpg"></li>
+  			<li id='panel-4'><img class="image4" src="Images/slider4.png"></li>
+        <li id='panel-5'><img class="image5" src="Images/slider5.png"></li>
+        <li id='panel-6'><img class="image6" src="Images/slider6.jpg"></li>
+  		</ul>
+  		<script src='stylesheet/jquery-1.8.1.min.js' type='text/javascript'></script>
+  		<script src='stylesheet/jquery.kwicks.js' type='text/javascript'></script>
+  		<script type='text/javascript'>
+  			$(function() {
+  				$('.kwicks').kwicks({
+  					maxSize: '75%',
+  					behavior: 'menu'
+  				});
+  			});
+  				$(document).ready(function() {
+       $('.slider_one_big_picture').EasySlides({'autoplay': true,'stepbystep':false, 'show': 5})
+       $('.slider_circle_10').EasySlides({'autoplay': true, 'show': 13})
+       $('.slider_four_in_line').EasySlides({'autoplay': true, 'show': 9})
+       $('.slider_clock').EasySlides({'autoplay': true, 'show': 15})
+
+     });
+  		</script>
+          </div>
+        </div>
+    </center>
+           <!--Navbar bar-->
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+       <div class="container-fluid">
+
+                   <!--navbar header-->
+     <div class="navbar-header">
+       		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+            </button>
+            <!--link through google 1 and 2 email-->
+<!-- navbar header-->
+
+<div class="collapse navbar-collapse" id="navbar-collapse">
+         <!--class for button inside header navbar-->
+
+        <!--navigation-->
+         <ul class="nav navbar-nav">
+         <li class="active bar"><a href="#home">Home</a></li>
+         <li><a href="#Products">Products</a></li>
+         <li><a href="#Features">Features</a></li>
+         <li><a href="#Faq">FAQ</a></li>
+         <li><a href="#Contact">Contact Us</a></li>
+       
+
+
+         </ul>
+         <ul class="nav navbar-nav navbar-right">
+      <li><a href="webpages/sign.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="webpages/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+         </div>
+
+  </div>
+
+       </div><!--end container-->
+    </nav>
+    <!--end navbar-->
+    <!--jumbotron-->
+        <div id="home">
+        </div><br>
+
+    <div class="container">
+
+        <div class="page-header">
+            	<h2>Introduction<br><small>Some Information About Our Company</small></h2></div>
+
+            <div class="page-header">
+            <div class="row">
+            <div class="col-md-12"><blockquote>
+  <p>Ryana Calendars is selling various Calendars,Diary and some different Stationery products. The shop
+advertises by distributing the pamphlets, advertising on television and so on. Due to
+rapid development in internet field, the company decides to launch a website where
+people will get all the information about the various products available with them
+easily.</p><footer>Regards, Ryana Calendars</footer>
+             </blockquote>
+             </div>
+             <!-- class col end-->
+
+                </div><!--end row-->
+        </div>
+    </div><!--end container-->
+
+    <!-- end feedback col to check and button dropdown to check-->
+    <div id="Products">
+    </div><br>
+
+    <div class="container">
+
+    <div class="page-header">
+          <h2>Products<br><small>Categories of Our Products are Here</small></h2></div>
+
+        <div class="page-header">
+    <div class="container">
+      <center><strong><h1>Categories</h1></strong></center>
+      <div class="row">
+      <div class="col-sm-3">
+                         <!-- normal -->
+                         <div class="ih-item circle colored effect13 from_left_and_right"><a href="webpages/calendars.html">
+                             <div class="img"><img src="images/maincalendar.jpg" class="img-responsive" alt="img"></div>
+                             <div class="mask1"></div>
+                             <div class="mask2"></div>
+                             <div class="info">
+                               <h3>Suitable Calendars</h3>
+                               <p>Be A Scheduler With It</p>
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+                         <!-- end normal -->
+                         <!-- normal -->
+        <div class="col-sm-3">
+                         <div class="ih-item circle colored effect13 from_left_and_right"><a href="webpages/journals.html">
+                             <div class="img"><img src="images/mainjournal.jpg" class="img-responsive"  alt="img"></div>
+                             <div class="mask1"></div>
+                             <div class="mask2"></div>
+                             <div class="info">
+                               <h3>Branded Journals</h3>
+                               <p>Note Everything You Want</p>
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+      <div class="col-sm-3">
+                         <!-- end normal -->
+                         <!-- normal -->
+                         <div class="ih-item circle colored effect13 from_left_and_right"><a href="webpages/Diaries.html">
+                             <div class="img"><img src="images/maindiaries.jpg" class="img-responsive" alt="img"></div>
+                             <div class="mask1"></div>
+                             <div class="mask2"></div>
+                             <div class="info">
+                               <h3>Perfect Diaries</h3>
+                               <p>For Your Some Lovely Memories</p>
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+        <div class="col-sm-3">
+                         <!-- end normal -->
+                         <!-- normal -->
+                         <div class="ih-item circle colored effect13 from_left_and_right"><a href="webpages/mugs.html">
+                             <div class="img"><img src="images/mainmugs.jpg" class="img-responsive" alt="img"></div>
+                             <div class="mask1"></div>
+                             <div class="mask2"></div>
+                             <div class="info">
+                               <h3>Printed Mugs</h3>
+                               <p>Start Your Day With It</p>
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+                         <!-- end normal -->
+                         <hr />
+                       </div>
+                     </div>
+                     </div>
+                     <!--features-->
+                     <div id="Features">
+</div><br>
+
+<div class="container">
+
+<div class="page-header">
+      <h2>Features<br><small>Some Features Available Here</small></h2></div>
+
+    <div class="page-header">
+<div class="container">
+  <div class="row">
+  <div class="col-sm-12">
+                     <!-- normal -->
+                     <div class="ih-item square colored effect3"><a href="webpages/Features/calendar/example/index.html" target="_blank">
+                         <div class="img"><img src="images/calendar.jpg" class="img-responsive" alt="img"></div>
+                         <div class="mask1"></div>
+                         <div class="mask2"></div>
+                         <div class="info">
+                           <h3>Live Calendar</h3>
+                           <p>A Live Calendar For Your Daily Use</p>
+                         </div>
+                       </a>
+                     </div>
+                   </div>
+                   <br>
+                   <br>
+                   <hr>
+                 </div>
+                     <!-- end normal -->
+                     <!-- normal -->
+                
+                     <!--end features-->
+          <!-- now FAQ starts-->
+<div  id="Faq">
+</div><br>
+<div class="container">
+    	 <div class="page-header">
+    <h2>FAQ<br><small>Answers Of Your Some Questions</small></h2>
+    	 </div><!-- emnd page header-->
+         <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+            	<div class="panel-heading">
+                	<div class="panel-title">
+        <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">Easy & Secure Payment</a>
+                   </div><!--panel title-->
+                  <div id="collapse-1" class="panel-collapse collapse ">
+                 <div class="panel-body">
+                 Your Payment will be 100% Secure and Safe.
+                 </div>
+                    </div><!--id colapse-->
+                </div><!--end panel heading-->
+            </div><!--panel default END-->
+            <div class="panel panel-default">
+            <div class="panel-heading">
+                <div class="panel-title">
+       <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">	Free return under conditions</a>
+                  </div><!--panel title-->
+                 <div id="collapse-2" class="panel-collapse collapse">
+                <div class="panel-body">
+                 If your product is defective OR damaged please contact us. Your product may be eligible for refund or replacement depending on the product category and condition.
+                </div>
+                   </div><!--id colapse-->
+               </div><!--end panel heading-->
+           </div><!--panel default END-->
+           <div class="panel panel-default">
+             <div class="panel-heading">
+                 <div class="panel-title">
+           <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">100% Genuine product</a>
+                  </div><!--panel title-->
+                 <div id="collapse-3" class="panel-collapse collapse ">
+                <div class="panel-body">
+                You'll choose from our highest quality products at great & affordable prizes.
+                </div>
+                   </div><!--id colapse-->
+               </div><!--end panel heading-->
+           </div><!--panel default END-->
+</div><!--End container-->
+
+
+
+
+
+
+<!--contact us-->
+<div  id="Contact">
+</div><br>
+<div class="container">
+<div class="page-header">
+<h2>Contact us<br><small>Contact Us For More</small></h2>
+</div><!-- emnd page header-->
+<div class="row">
+<div class="col-md-6">
+<div class="row">
+ <div class="col-lg-12">
+   </div><!--end col  4-->
+       <div class="col-lg-12">
+          <form action="" class="form-horizontal">
+          <div class="form-group">
+ <label for="user-name" class="col-lg-2 control-label">Name</label> <!-- end label-->
+             <div class="col-lg-10">
+  <input type="text" class="form-control" id="user-name"required="required" placeholder="Enter Your Name">
+      </input>
+             </div><!--col 10-->
+          </div><!--form group-->
+
+           <div class="form-group">
+ <label for="user-email" class="col-lg-2 control-label" >Email</label> <!-- end label-->
+             <div class="col-lg-10">
+  <input class="form-control" id="user-EMAIL" type="email" required placeholder="Enter Your Email Address">
+      </input>
+             </div><!--col 10-->
+          </div><!--form group-->
+
+           <div class="form-group">
+ <label for="user-message" class="col-lg-2 control-label">Message</label> <!-- end label-->
+             <div class="col-lg-10">
+  <textarea name="user-message" id="user-message" class="form-control" cols="20" rows="10" required placeholder="Enter your message"></textarea>
+
+             </div><!--col 10-->
+          </div><!--form group-->
+   <div class"form-group">
+     	<div class="col-lg-10 ">
+        	<button type="submit" class="btn btn-primary">Submit</button>
+        </div><!-- for button col 10-->
+   </div><!-- end form group of submit button-->
+       </form>
+       </div><!--end col  8-->
+     </div><!--end row-->
+ 
+</div><!-- end container-->
+<br/>
+<div class="col-md-6">
+<div class="map-responsive img-rounded">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1867.7467819402366!2d67.06751569302355!3d24.87478781902934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e95b21bb021%3A0x2237c01a9478b9d0!2sRyana+Calenders!5e1!3m2!1sen!2s!4v1524685345842" width="1000" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div><br />
+</div>
+</div>
+</div>
+</div>
+     <hr>
+                     <br>
+                     <div class="page-header">
+                           <h2>Our Team<br><small>The Creators Of Our Web</small></h2></div>
+                           <br>
+  <div class="row">
+    <div class="col-sm-12">
+                     <div class="ih-item square colored effect3"><a href="webpages/Features/team/index.html" target="_blank">
+                         <div class="img"><img src="images/team.jpg" class="img-responsive"  alt="img"></div>
+                         <div class="mask1"></div>
+                         <div class="mask2"></div>
+                         <div class="info">
+                           <h3>Our Team Members</h3>
+                           <p>A Short Detail About Us</p>
+                         </div>
+                       </a>
+                     </div>
+                   </div>
+                     <!-- end normal -->
+                     <hr />
+                   </div>
+                 </div>
+                 </div>
+               </div>
+             </div>
+</div>
+</div>
+<div class="container-fluid padding">
+<div class="row text-center padding">
+	<div class="col-12">
+    	<h2>Join Us On</h2>
+    </div><!--col 12-->
+    <div class="col-12 social padding faw">
+    	<a href="https://www.facebook.com/Ryana-Calendars-230245907727094/"><span class="fa fa-facebook-official"></span></a>&nbsp;
+        <a href="https://www.twitter.com/"><span class="fa fa-twitter"></span></a>&nbsp;
+        <a href="https://www.instagram.com/"><span class="fa fa-instagram"></span></a>&nbsp;
+        <a href="https://www.pinterest.com/"><span class="fa fa-pinterest-p"></span></a>&nbsp;
+    </div><!--col 12 padding-->
+</div><!--row-->
+</div><!--container-->
+  <script src"https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!--compileed and minified js-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <div class="footer-section">
+<div class="footer">
+<div class="container-fluid">
+
+<div class="col-md-12" style="margin-top:-70px;">
+<h1 style="font-size:60px;color:#FFA600;"><span><font face="Brush Script Std" color="#FFA600">Ryana Calendars </font></span></h1>
+</div>
+<div class="col-md-4 footer-two">
+<h5>Quick Links</h5>
+<ul>
+<li><a href="#home"><span class="glyphicon glyphicon-home"></span> Home</a> </li>
+<li><a href="#Products" target="_blank"><span class="glyphicon glyphicon-gift"></span> Products</a> </li>
+<li><a href="#Features" target="_blank"><span class="glyphicon glyphicon-star"></span> Features</a> </li>
+</ul>
+</div>
+<div class="col-md-4 footer-four">
+<h5>Contact Us</h5>
+<ul>
+<li><a href="http://www.gmail.com"><span class="glyphicon glyphicon-envelope"></span> Email : ryana.calendar@gmail.com</a> </li>
+<li><a href="#Products" target="_blank"><span class="glyphicon glyphicon-earphone"></span> +92 346 7789045</a> </li>
+<li><a href="https://www.google.com/maps/place/Ryana+Calenders/@24.8746637,67.0654615,17z/data=!3m1!4b1!4m5!3m4!1s0x3eb33e95b21bb021:0x2237c01a9478b9d0!8m2!3d24.8746637!4d67.0676502" target="_blank"><span class="glyphicon glyphicon-map-marker"></span> Darul Aman Street 2, Darul Aman Society PECHS, Karachi, Karachi City, Sindh, Pakistan</a> </li>
+</ul>
+</div>
+
+<div class="col-md-4 footer-four">
+<h5>Location</h5>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1867.7467819402366!2d67.06751569302355!3d24.87478781902934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33e95b21bb021%3A0x2237c01a9478b9d0!2sRyana+Calenders!5e1!3m2!1sen!2s!4v1524685345842" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+</div>
+</div>
+
+<div class="footer-bottom">
+<div class="container">
+<div class="row">
+
+<div class="col-lg-12 ">
+<center>
+<p> <font color="#FFFFFF"><b>CopyRight © 2018 Ryana Calendars</b></font> <a href="#home">Home</a>  <a href="Privacy.pdf" target="_blank"> | Privacy Policy |</a> <a href="docx/terms.pdf" target="_blank">Term & Conditions</a></p>
+</center>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
